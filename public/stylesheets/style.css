@@ -1,0 +1,102 @@
+body {
+  padding:2% 5%;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #eee;
+}
+
+a {
+  color: #00B7FF;
+}
+.get,.update,.insert
+{
+  width: 26%;
+  margin: 2%;
+}
+.get{
+  float: left;
+  background-color:lightcoral;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+.get a
+{
+  color: rebeccapurple;
+}
+.get .item
+{
+  border: 1px solid #333;
+  margin: 2%;
+  padding: 1%;
+  text-align: left;
+}
+.get .item button
+{
+  font-weight: normal;
+  border-radius: 5px;
+  padding: 2px 5px;
+  background-color: #4267B2;
+  border-color: #4267B2;
+  color: #fff;
+}
+.get .item .red
+{
+  background-color: red;
+  border-color: red;
+  color: #fff;
+}
+.get .item .button_cover
+{
+  text-align: right;
+}
+.get .item form
+{
+    display: inline-block;
+    text-align: right;
+    margin: 2px;
+}
+
+.insert,.update
+{
+  float:left;
+  text-align: center;
+  background-color: lightblue;
+  border-radius: 5px;
+  padding: 10px;
+}
+.insert
+{
+  background-color: #3E5C9A;
+}
+.insert h3,.get h3,.update h3
+{
+  color: #fff;
+  background-color: #000;
+  padding: 2%;
+  border-radius: 5px;
+  margin: 0;
+}
+.insert hr,.get hr,.update hr
+{
+   margin-top: 2%;
+  margin-bottom: 8%;
+}
+.get hr
+{
+  margin-bottom: 2%;
+}
+.input input,.input
+{
+    padding: 5px;
+    border-radius: 5px;
+
+}
+.insert button,.update button
+{
+  padding: 2%;
+  margin: 8%;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: #609E4D;
+  border-color:  #609E4D;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <script type="text/javascript" src="../javascripts/main.js"></script>
+</head>
+<body>
+
+    <section class="insert">
+        <h3>Insert Data</h3>
+        <hr/>
+        <form action="/insert" method="post">
+            <div class="input">
+                <label>First Name : </label>
+                <input type="text" id="fname" name="fname" required/>
+            </div>
+            <div class="input">
+                <label>Last Name : </label>
+                <input type="text" id="lname" name="lname" required/>
+            </div>
+            <button type="submit">Insert Data</button>
+        </form>
+
+    </section>
+
+    <section class="get">
+        <h3>Get Data</h3>
+        <hr/>
+        <a href="/get-data">Load Data</a>
+        <div>
+            {{# each items}}
+                <article class="item">
+                    <div><strong>UID : </strong>{{this._id}}&nbsp;&nbsp;</div>
+                    <div><strong>FName : </strong>{{this.fName}},  <strong>LName : </strong> {{this.lName}}</div>
+                    <div class="button_cover"><form action="/finddata" method="post"><input type="hidden" value="{{this._id}}" name="uid"/><button type="submit">Update</button></form>&nbsp;&nbsp;<form action="/delete" method="post"><input type="hidden" value="{{this._id}}" name="uid"/><button class="red" type="submit"><span>Remove</span></button></form></div>
+                </article>
+            {{/each}}
+        </div>
+    </section>
+
+    <section class="update">
+        <h3>Update Data</h3>
+        <hr/>
+        {{# each upitems}}
+        <form action="/update" method="post">
+            <div class="input">
+                <label>User UUID  : </label>
+                <input type="text" id="uid" value="{{this._id}}" disabled/>
+                <input type="hidden" id="uuid" value="{{this._id}}" name="uuid"/>
+            </div>
+            <div class="input">
+                <label>First Name : </label>
+                <input type="text" id="ufname" value="{{this.fName}}" name="ufname" required/>
+            </div>
+            <div class="input">
+                <label>Last Name : </label>
+                <input type="text" id="ulname" value="{{this.lName}}" name="ulname" required/>
+            </div>
+
+            <button type="submit">Update Data</button>
+        </form>
+            {{/each}}
+    </section>
+</body>
+</html>
