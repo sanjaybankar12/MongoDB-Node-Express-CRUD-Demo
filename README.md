@@ -8,12 +8,12 @@ Requirement :
 Create database 'myDb' in MongoDB by using command promt. To create database goto the MongoDB 
 installation directory to bin folder. suppose your MongoDB install in C drive then write command such as
 
-C:/mongodb/bin>mongod --directoryperdb --dbpath "C:/mongodb/data/db" --logpath "C:/mongodb/log/mongo.log" --logappend --rest --install
+>C:/mongodb/bin>mongod --directoryperdb --dbpath "C:/mongodb/data/db" --logpath "C:/mongodb/log/mongo.log" --logappend --rest --install
 
 Now, MongoDB create databases in db folder which is in data folder and all log of MongoDB store mongo.log file.
 To start MongoDB, write command as
 
-C:/mongodb/bin>mongo
+>C:/mongodb/bin>mongo
 
 Now, MongoDB service gets started. For creating databse write command as,
 >use myDb
