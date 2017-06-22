@@ -1,8 +1,8 @@
 # MongoDB-Node-Express-CRUD-Demo
 
-Requirement :
-1)MongoDB setup install
-2)NodeJS setup install
+Requirement :\n
+    1) MongoDB setup install\n
+    2) NodeJS setup install
 
 Create database 'myDb' in MongoDB by using command promt. To create database goto the MongoDB 
 installation directory to bin folder. suppose your MongoDB install in C drive then write command such as
