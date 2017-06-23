@@ -23,6 +23,18 @@ This will not only create new database but also switch to database
 Now, create collection 'emp' by using following command as,
 >db.createCollection("emp");
 
+Now, Our MongoDB configuration is completed. We have to run project using NodeJS again open command prompt and go to the project directory(suppose your project on Desktop) using following command as,
+>C:\Users\(USERNAME)\Desktop\MongoDB-Node-Express-CRUD-Demo
+
+Actually, all required node modules for this project is already present in project directory's node_modules folder. If this folder not present then you have to install node modules yourself by following command as,
+>C:\Users\(USERNAME)\Desktop\MongoDB-Node-Express-CRUD-Demo>npm install
+
+To run project using following command as,
+>C:\Users\(USERNAME)\Desktop\MongoDB-Node-Express-CRUD-Demo>npm start
+
+Your project start loading in browser, If not then enter following url in browser as,
+>localhost:3000
+
 Description :
 
 This Application uses MongoDB, Express.js, Node.js, Handlebars.js to build CRUD Application.
